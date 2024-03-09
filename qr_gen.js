@@ -22,9 +22,9 @@ inquirer
     })
     .catch((error) => {
         if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
+            print("Prompt couldn't be rendered in the current environment")
         } else {
-        // Something else went wrong
+            print("Something else went wrong")
         }
     });
 
